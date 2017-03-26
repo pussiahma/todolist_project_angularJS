@@ -1,0 +1,174 @@
+body {
+	margin: 0 auto;
+}
+
+
+ul {
+	padding: 0;
+}
+
+#header {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 4em;
+}
+
+.container {
+max-width: 400px;
+margin: 100px auto 0;
+ display: block;
+ background: white;
+ border-width:8px;
+ border-color: #333;
+border-style:double;
+padding: 30px;
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+
+h1 {
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	color: black;
+}
+
+h4 {
+	color: red;
+}
+
+
+
+
+#add {
+	margin-left: 10px;
+	background-color: black;
+	color: white;
+	border: none;
+}
+
+#add:hover{
+	background-color: #333;
+
+}
+
+#taskLists {
+	width: 100%;
+	clear: both;
+
+}
+
+#taskLists li{
+list-style-type: none;
+display: block;
+padding:  20px;
+margin: 5px auto;
+max-width: 100%;
+background-color: black;
+font-size: 1.2em;
+
+
+}
+
+#taskLists li:nth-child(odd){
+	background-color: #333;
+}
+
+#taskLists li.completed {
+
+background-color:#1FAB4B;
+
+
+}
+
+#taskLists li.completed label {
+	text-decoration: line-through;
+	opacity: 0.2;
+	color: #333;
+}
+
+#taskLists li.completed button {
+	color: #333;
+}
+
+#taskLists input{
+	max-width: 50%;
+display: inline;
+font-size: 1em;
+}
+
+#taskLists label {
+	color: white;
+	opacity: 0.8;
+	margin: 0 auto;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	max-width: 50%;
+}
+
+#tasklists input {
+	margin: 0 auto;
+}
+
+
+ #taskLists ul{
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+.close {
+	color: white;
+}
+
+.edit {
+	float: right;
+background: none;
+margin: 3px 15px 0 0;
+font-size: 1em;
+border:none;
+opacity: .5;
+color: white;
+
+}
+.edit {
+	padding: none;
+}
+
+input[type=checkbox]{
+padding: 20px;
+margin: 10px 0 0 0;
+}
+
+
+.edit:hover, .close:hover {
+	opacity: 1;
+
+
+}
+.close {
+	margin: 5px 0 0 0;
+}
+
+.close:hover {
+	color: white;
+}
+
+.edit:focus {
+  border: none;
+}
+
+.checkbox {
+	float:left;
+}
+
+#task{
+
+	max-width: 50%;
+	margin: 0 auto;
+	display: inline;
+}
+
+.form-control:focus {
+	border: 0.5px solid black;
+	box-shadow: 0 1px 1px #333 inset, 0 0 8px #ccc;
+}

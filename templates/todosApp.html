@@ -1,0 +1,20 @@
+<div id="container" class="container text-center">
+
+<h1 id="header" class="h1 display-1">{{ headerText }}</h1>
+<form>
+<input id="task" class="form-control" ng-model="todoText" required>
+<button href="" ng-click="addTodo(todo)" class="btn btn-info" id="add" ng-disabled="!todoText">Add</button>
+</form>
+<hr>
+<div id="taskLists">
+<ul id="todos" class="text-center">
+<li class="item" ng-class="{'editing-item': editing, 'edited': todo.edited, 'completed': todo.completed}" ng-repeat="todo in todos | orderBy: 'completed' track by $index">
+  <input ng-click="todoCompleted()" ng-model="todo.completed" class="checkbox" type="checkbox">
+    <span ng-click="todo.completed = !todo.completed; todo.edited= true"></span>
+   <label ng-click="editing=true" ng-hide="editing">{{todo.name}}</label>
+  <input  ng-change="todo.edited = true;" ng-blur= "editing = false;" ng-show="editing" ng-model="todo.name" class="form-control" type="text">
+    <button ng-click= "removeTodo(todo)" class="close remove btn-secondary" href="">X</button>
+  <button href="" class="edit btn-secondary" ng-click="saveTodo(todo)">save</button>
+</div>
+</div>
+
